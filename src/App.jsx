@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'regenerator-runtime/runtime'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import Footer from './component/Footer';
 // import "babel-polyfill";
 const App = () => {
   const [isMicrophoneAvailable, setIsMicrophoneAvailable] = useState(true);
@@ -38,6 +39,7 @@ const App = () => {
           <button onClick={stopListening}>Stop Listening</button>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
